@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Validate</title>
+</head>
+
+<body>
+    <div id="msg"></div>
+    <div class="container">
+        <div class="row justify-content-center my-3">
+            <h1>Sign Up</h1>
+        </div>
+
+        <form class="validation" id="form" autocomplete="off">
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Username">
+                    <small id="usernameInvalid" class="form-text text-muted invalid-feedback" align='justify'>
+                        Your username must be 2-10 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                    </small>
+                   
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="fName">First Name</label>
+                    <input type="text" class="form-control" id="fName" placeholder="First Name">
+                    <small id="fNameInvalid" class="form-text text-muted invalid-feedback" align='justify'>
+                        Your name must be longer than 2 characters, and must not contain digitss.
+                    </small>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="lName">Last Name</label>
+                    <input type="text" class="form-control" id="lName" placeholder="Last Name">
+                    <small id="lNameInvalid" class="form-text text-muted invalid-feedback" align='justify'>
+                        Your name must be longer than 2 characters, and must not contain digitss.
+                    </small>
+                </div>
+
+            </div>
+            <div class="form-row my-2">
+                <div class="col-md-6 mb-4.5">
+                    <label for="email">Email Id</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        </div>
+                        <input type="text" class="form-control" id="email" aria-describedby="inputGroupPrepend">
+                        <small id="emailInvalid" class="form-text text-muted invalid-feedback" align='justify'>
+                            Your email is Invalid.
+                        </small>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4.5">
+                    <label for="pwd">Password</label>
+                    <input type="text" class="form-control" id="pwd">
+                    <small id="pwdInvalid" class="form-text text-muted invalid-feedback">
+                        Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                    </small>
+                </div>
+            </div>
+            <div class="form-row my-3">
+                <div class="col-md-6 mb-3">
+                    <label for="city">City</label>
+                    <select class="custom-select" id="city">
+                        <option selected disabled value="">Choose...</option>
+                        <option>...</option>
+                        <option>Delhi</option>
+                        <option>Mumbai</option>
+                        <option>Banglore</option>
+                        <option>Kolkata</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid state.
+                    </div>
+                  </div>
+                <div class="col-md-3 mb-3">
+                    <label for="number">Contact Number</label>
+                    <input type="text" class="form-control" id="number">
+                    <small id="numberInvalid" class="form-text text-muted invalid-feedback" align='justify'>
+                        Your phone number must me 10 digits long
+                    </small>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox">
+                    <label class="form-check-label" for="checkbox">
+                        Agree to terms and conditions
+                    </label>
+                    <small id="checkInvalid" class="form-text text-muted invalid-feedback" align='justify'>
+                        You must accept terms and conditions
+                    </small>
+                </div>
+            </div>
+            <button class="btn btn-primary" id="submitBtn" type="submit">Submit form</button>
+        </form>
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
